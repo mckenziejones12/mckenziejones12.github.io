@@ -138,5 +138,9 @@ footer {
   }
   footer {
     min-width: 300px;
+    margin: 60px auto;
+  }
+  header {
+    margin: 60px auto;
   }
 }
