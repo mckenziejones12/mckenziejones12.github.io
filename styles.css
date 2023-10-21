@@ -1,6 +1,5 @@
 body {
   background-color: rgb(165, 210, 196);
-  /*background-repeat: no-repeat;*/
   min-height: 100vh;
   font-family: "prompt", sans-serif;
   margin: none;
@@ -77,21 +76,73 @@ footer {
   margin: auto 10px;
   font-size: 18px;
   letter-spacing: 1.5px;
+  color: gray;
 }
 a {
   text-decoration: none;
-  color: gray;
 }
 
 .content {
   font-size: 18px;
   letter-spacing: 1px;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 70px auto;
+}
 .aboutMeSection,
-footer {
+footer,
+.featuredWork {
   border-radius: 10px;
 }
 
+.featuredWork {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  padding: 15px;
+  border: 4px solid grey;
+  border-radius: 10px;
+  background-color: white;
+  height: 230px;
+  justify-content: space-evenly;
+}
+
+.projectCardPicture {
+  width: 100px;
+  height: 100px;
+}
+.projectCardLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.projectTitle,
+.projectDescription {
+  text-align: center;
+}
+.projectTitle {
+  font-size: 24px;
+}
+
+#featuredWorkTitle {
+  color: white;
+  border-bottom: 3px solid gray;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
 @media (max-width: 1100px) {
   header {
     margin: 60px 90px;
